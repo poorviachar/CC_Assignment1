@@ -1,0 +1,175 @@
+<html>
+<title>W3.CSS Template</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+function clickCounter1() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount1) {
+      localStorage.clickcount1 = Number(localStorage.clickcount1)+1;
+    } else {
+      localStorage.clickcount1 = 1;
+    }
+    document.getElementById("result").innerHTML = "Your likes: " + localStorage.clickcount1 ;
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+     <script>
+function clickCounter2() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount2) {
+      localStorage.clickcount2 = Number(localStorage.clickcount2)+1;
+    } else {
+      localStorage.clickcount2 = 1;
+    }
+    document.getElementById("result1").innerHTML = "Your likes: " + localStorage.clickcount2 ;
+  } else {
+    document.getElementById("result1").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+    <script>
+function clickCounter3() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount3) {
+      localStorage.clickcount3 = Number(localStorage.clickcount3)+1;
+    } else {
+      localStorage.clickcount3 = 1;
+    }
+    document.getElementById("result2").innerHTML = "Your likes: " + localStorage.clickcount3 ;
+  } else {
+    document.getElementById("result2").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+      <script>
+function clickCounter4() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount4) {
+      localStorage.clickcount4 = Number(localStorage.clickcount4)+1;
+    } else {
+      localStorage.clickcount4 = 1;
+    }
+    document.getElementById("result3").innerHTML = "Your likes: " + localStorage.clickcount4 ;
+  } else {
+    document.getElementById("result3").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+      <script>
+function clickCounter5() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount5) {
+      localStorage.clickcount5 = Number(localStorage.clickcount5)+1;
+    } else {
+      localStorage.clickcount5 = 1;
+    }
+    document.getElementById("result4").innerHTML = "Your likes: " + localStorage.clickcount5 ;
+  } else {
+    document.getElementById("result4").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+</head>
+<body>
+<h1 style="background-color:Black;color:White;">Helping</h1>
+<div class="w3-container">
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Upload an Act</button>
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Remove an Act</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<h2></h2>
+
+<div class="w3-container">
+  <h2>Gallery</h2>
+  <p>Click on the images to display them in full size.</p>
+</div>
+<!--<div class="container">-->
+<div class="w3-row-padding">
+  <div class="w3-container w3-third">
+    <img src="11.jpg" style="width:100%;cursor:pointer;line-height: 0;float:left" 
+    onclick="onClick(this)" class="w3-hover-opacity ">
+      <div style="display: block; color: antiquewhite; background-color: black;width: 430px;margin-top: auto;"><p><b>phebe_90:</b> Kitchen is the heart of every home.It evokes memories of family history.  </p>
+    <button type="button" onclick="clickCounter1()" class="btn btn-default btn-sm">
+        <div id="result"></div>
+          <span class="glyphicon glyphicon-thumbs-up"></span> Like
+        </button></div>
+      
+  </div>
+
+  <div class="w3-container w3-third">
+    <img src="149.jpg" style="width:100%;cursor:pointer;float:left;" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+      <div style="color: antiquewhite; background-color: black;width: 430px;margin-top: auto;"><p><b>achristie:</b> Cherish all your happy moments,they make a fine cushion for old age. </p>
+        <button type="button" onclick="clickCounter2()" class="btn btn-default btn-sm">
+        <div id="result1"></div>
+          <span class="glyphicon glyphicon-thumbs-up"></span> Like
+        </button>
+       </div>
+      
+  </div>
+  <div class="w3-container w3-third">
+    <img src="h2.jpg" style="width:100%;cursor:pointer;float:left;" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+      <div style="color: antiquewhite; background-color: black;width: 430px;margin-top: auto;"><p><b>stephaniemayer:</b> It really feels good after helping someone who's in need of you. #Behelpful</p>
+     <button type="button" onclick="clickCounter3()" class="btn btn-default btn-sm">
+        <div id="result2"></div>
+          <span class="glyphicon glyphicon-thumbs-up"></span> Like
+        </button>
+      </div>
+      
+  </div>
+  <h1></h1>
+ < <div class="w3-container w3-third">
+    <img src="images.jpg" style="width:100%;cursor:pointer;float:left;" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+      <div style="color: antiquewhite; background-color: black;width: 430px;margin-top: auto;"><p><b>danbrown:</b> Today my friend was getting really late for his office and coincidentally I reached at his rescue. </p>
+   <button type="button" onclick="clickCounter4()" class="btn btn-default btn-sm">
+        <div id="result3"></div>
+          <span class="glyphicon glyphicon-thumbs-up"></span> Like
+        </button> </div>
+     
+  </div>
+ <div class="w3-container w3-third">
+    <img src="schoolkids.jpg" style="width:100%;cursor:pointer;float:left" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+      <div style="color: antiquewhite; background-color: black;width: 430px;margin-top: auto;"><p><b>aithalrachana:</b>A real friend is one who walks in when the rest of the world walks out.</p>
+    <button type="button" onclick="clickCounter5()" class="btn btn-default btn-sm">
+        <div id="result4"></div>
+          <span class="glyphicon glyphicon-thumbs-up"></span> Like
+        </button> </div>
+    
+  </div>
+
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+
+</body>
+</html>
